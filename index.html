@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dev's Mercado</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Produtos</h2>
+            <p>Lista de produtos do mercado</p>
+        </div>
+
+        <div class="container">
+            <form action="">
+                <label>Produto
+                    <input type="text" id="product">
+                </label>
+                <label>Preço
+                    <input type="number" id="price">
+                </label>
+
+                <div class="btns">
+                    <button type="button" id="btn1" onclick="produto.salvar()">Salvar</button>
+                    <button type="button" onclick="produto.cancelar()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Ação</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
